@@ -1,0 +1,1522 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="Bitcoin,BTC,btc.com,chain,blockchain,bitcoin explorer,blockr,qukuai,bitcoin address,transaction,block,multisignature">
+    <meta name="author" content="BTC.COM">
+    <meta name="format-detection" content="telephone=no" />
+
+    
+    <link rel="dns-prefetch" href="//s.btc.com">
+    <link rel="dns-prefetch" href="//s2.btc.com">
+    <link rel="dns-prefetch" href="//i.btc.com">
+
+    <title>Pool Stats - BTC.com</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://s.btc.com/explorer/assets/opensearch_b0f2ee9.xml" title="BTC.com">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <link rel="stylesheet" href="https://s.btc.com/explorer/assets/style/bootstrap_95203a2.css"/><link rel="stylesheet" href="https://s.btc.com/explorer/assets/style/main_f60427d.css"/>    
+    
+    
+    <!-- Version: df7f7f006c6f675e2f75c1cf8dfcd3ebeca90cf2, Build at: Saturday, March 3rd 2018, 8:35:55 am. -->
+
+
+<script>
+    var globals = {
+        chartWidth: 330,
+        chartHeight: 240,
+        pools: [{"n":"39842","p":0.07780394546186,"name":"F2Pool","id":"22","hash_share":1.8812677662807e+18,"count":"39842"},{"n":"34106","p":0.066602614425033,"name":"AntPool","id":"29","hash_share":1.6104241362575e+18,"count":"34106"},{"n":"32935","p":0.064315871286239,"name":"BTC Guild","id":"6","hash_share":1.5551316169483e+18,"count":"32935"},{"n":"23083","p":0.045076765049348,"name":"GHash.IO","id":"15","hash_share":1.0899378507369e+18,"count":"23083"},{"n":"22795","p":0.044514355122812,"name":"SlushPool","id":"7","hash_share":1.0763390073884e+18,"count":"22795"},{"n":"17376","p":0.033932065567624,"name":"BTCC","id":"38","hash_share":8.2046354868967e+17,"count":"17376"},{"n":"16394","p":0.032014403943118,"name":"BitFury","id":"41","hash_share":7.7409527032795e+17,"count":"16394"},{"n":"12180","p":0.023785253143051,"name":"BW.COM","id":"39","hash_share":5.7511774994476e+17,"count":"12180"},{"n":"11387","p":0.022236673032835,"name":"Eligius","id":"8","hash_share":5.3767371253046e+17,"count":"11387"},{"n":"8052","p":0.015724044196047,"name":"BTC.com","id":"55","hash_share":3.8020099528368e+17,"count":"8052"},{"n":"7446","p":0.014540639975629,"name":"ViaBTC","id":"54","hash_share":3.5158676240466e+17,"count":"7446"},{"n":"7107","p":0.013878636624603,"name":"BTC.TOP","id":"59","hash_share":3.3557979054659e+17,"count":"7107"},{"n":"6446","p":0.012587827730715,"name":"BitMinter","id":"3","hash_share":3.0436855633366e+17,"count":"6446"},{"n":"6392","p":0.01248237586949,"name":"50BTC","id":"14","hash_share":3.0181877320582e+17,"count":"6392"},{"n":"6290","p":0.012283189020508,"name":"KnCMiner","id":"20","hash_share":2.9700251618658e+17,"count":"6290"},{"n":"4845","p":0.0094613753266078,"name":"OzCoin","id":"9","hash_share":2.2877220841399e+17,"count":"4845"},{"n":"4375","p":0.0085435535714983,"name":"Bixin","id":"53","hash_share":2.0657965156062e+17,"count":"4375"},{"n":"3991","p":0.0077936736694514,"name":"BitClub","id":"36","hash_share":1.8844786042936e+17,"count":"3991"},{"n":"3595","p":0.0070203600204655,"name":"EclipseMC","id":"10","hash_share":1.6974945082524e+17,"count":"3595"},{"n":"3127","p":0.0061064438898458,"name":"ASICMiner","id":"2","hash_share":1.4765133038401e+17,"count":"3127"},{"n":"2210","p":0.0043157150612597,"name":"KanoPool","id":"33","hash_share":1.0435223541691e+17,"count":"2210"},{"n":"2024","p":0.0039524919837057,"name":"GBMiners","id":"56","hash_share":9.5569649087701e+16,"count":"2024"},{"n":"1895","p":0.0037005792041118,"name":"1Hash","id":"51","hash_share":8.9478500504542e+16,"count":"1895"},{"n":"1827","p":0.0035677879714577,"name":"Telco 214","id":"47","hash_share":8.6267662491714e+16,"count":"1827"},{"n":"1824","p":0.003561929534723,"name":"CloudHashing","id":"46","hash_share":8.6126007873501e+16,"count":"1824"},{"n":"1508","p":0.0029448408653302,"name":"21 Inc.","id":"42","hash_share":7.1205054755066e+16,"count":"1508"},{"n":"1365","p":0.0026655887143075,"name":"Bitcoin.com","id":"57","hash_share":6.4452851286913e+16,"count":"1365"},{"n":"1290","p":0.0025191277959389,"name":"Polmine","id":"19","hash_share":6.0911485831588e+16,"count":"1290"},{"n":"908","p":0.0017731535183818,"name":"Cointerra","id":"32","hash_share":4.2874131112467e+16,"count":"908"},{"n":"816","p":0.0015934947918497,"name":"MegaBigPower","id":"24","hash_share":3.8530056153935e+16,"count":"816"},{"n":"676","p":0.0013201010775618,"name":"digitalBTC","id":"43","hash_share":3.1919507303995e+16,"count":"676"},{"n":"623","p":0.0012166020285814,"name":"HHTT","id":"23","hash_share":2.9416942382232e+16,"count":"623"},{"n":"583","p":0.0011384895387848,"name":"Bitparking","id":"17","hash_share":2.7528214139392e+16,"count":"583"},{"n":"449","p":0.00087681269796634,"name":"MaxBTC","id":"11","hash_share":2.1200974525878e+16,"count":"449"},{"n":"441","p":0.00086119020000703,"name":"BATPOOL","id":"58","hash_share":2.082322887731e+16,"count":"441"},{"n":"416","p":0.00081236989388418,"name":"BTPOOL","id":"68","hash_share":1.9642773725535e+16,"count":"416"},{"n":"346","p":0.00067567303674021,"name":"CoinLab","id":"13","hash_share":1.6337499300566e+16,"count":"346"},{"n":"341","p":0.00066590897551564,"name":"58COIN","id":"69","hash_share":1.6101408270211e+16,"count":"341"},{"n":"333","p":0.00065028647755633,"name":"GoGreenLight","id":"61","hash_share":1.5723662621643e+16,"count":"333"},{"n":"333","p":0.00065028647755633,"name":"TripleMining","id":"12","hash_share":1.5723662621643e+16,"count":"333"},{"n":"293","p":0.00057217398775977,"name":"BTC Nuggets","id":"44","hash_share":1.3834934378803e+16,"count":"293"},{"n":"232","p":0.00045305244082002,"name":"Solo CK","id":"34","hash_share":1.0954623808472e+16,"count":"232"},{"n":"226","p":0.00044133556735054,"name":"Yourbtc.net","id":"27","hash_share":1.0671314572046e+16,"count":"226"},{"n":"123","p":0.00024019590612441,"name":"CanoePool","id":"64","hash_share":5.8078393467328e+15,"count":"123"},{"n":"116","p":0.00022652622041001,"name":"EXX&BW","id":"62","hash_share":5.4773119042358e+15,"count":"116"},{"n":"113","p":0.00022066778367527,"name":"Waterhole","id":"66","hash_share":5.3356572860228e+15,"count":"113"},{"n":"112","p":0.00021871497143036,"name":"shawnp0wers","id":"73","hash_share":5.2884390799518e+15,"count":"112"},{"n":"111","p":0.00021676215918544,"name":"ConnectBTC","id":"60","hash_share":5.2412208738808e+15,"count":"111"},{"n":"109","p":0.00021285653469562,"name":"BitcoinIndia","id":"65","hash_share":5.1467844617388e+15,"count":"109"},{"n":"105","p":0.00020504528571596,"name":"NMCbit","id":"26","hash_share":4.9579116374548e+15,"count":"105"},{"n":"77","p":0.00015036654285837,"name":"Mt Red","id":"25","hash_share":3.6358018674669e+15,"count":"77"},{"n":"53","p":0.00010349904898044,"name":"BitcoinRussia","id":"70","hash_share":2.5025649217629e+15,"count":"53"},{"n":"48","p":9.3734987755867e-5,"name":"ST Mining Corp","id":"16","hash_share":2.2664738914079e+15,"count":"48"},{"n":"43","p":8.3970926531298e-5,"name":"simplecoin.us","id":"5","hash_share":2.0303828610529e+15,"count":"43"},{"n":"41","p":8.006530204147e-5,"name":"MiningKings","id":"77","hash_share":1.9359464489109e+15,"count":"41"},{"n":"40","p":7.8112489796556e-5,"name":"mmpool","id":"18","hash_share":1.8887282428399e+15,"count":"40"},{"n":"36","p":7.03012408169e-5,"name":"Eobot","id":"50","hash_share":1.6998554185559e+15,"count":"36"},{"n":"35","p":6.8348428571987e-5,"name":"PHash.IO","id":"74","hash_share":1.6526372124849e+15,"count":"35"},{"n":"26","p":5.0773118367761e-5,"name":"HAOZHUZHU","id":"63","hash_share":1.227673357846e+15,"count":"26"},{"n":"22","p":4.2961869388106e-5,"name":"175btc","id":"1","hash_share":1.038800533562e+15,"count":"22"},{"n":"22","p":4.2961869388106e-5,"name":"Bitsolo","id":"40","hash_share":1.038800533562e+15,"count":"22"},{"n":"20","p":3.9056244898278e-5,"name":"NiceHash","id":"35","hash_share":9.4436412141997e+14,"count":"20"},{"n":"16","p":3.1244995918622e-5,"name":"BCMonster","id":"49","hash_share":7.5549129713598e+14,"count":"16"},{"n":"9","p":1.7575310204225e-5,"name":"BTCServ","id":"4","hash_share":4.2496385463899e+14,"count":"9"},{"n":"8","p":1.5622497959311e-5,"name":"bcpool.io","id":"31","hash_share":3.7774564856799e+14,"count":"8"},{"n":"6","p":1.1716873469483e-5,"name":"CKPool","id":"71","hash_share":2.8330923642599e+14,"count":"6"},{"n":"6","p":1.1716873469483e-5,"name":"UNOMP","id":"52","hash_share":2.8330923642599e+14,"count":"6"},{"n":"5","p":9.7640612245695e-6,"name":"Huobi","id":"45","hash_share":2.3609103035499e+14,"count":"5"},{"n":"3","p":5.8584367347417e-6,"name":"DCExploration","id":"67","hash_share":1.41654618213e+14,"count":"3"},{"n":"1","p":1.9528122449139e-6,"name":"7pool","id":"76","hash_share":47218206070999,"count":"1"},{"n":"1","p":1.9528122449139e-6,"name":"BTC Pool Party","id":"48","hash_share":47218206070999,"count":"1"},{"n":"1","p":1.9528122449139e-6,"name":"EkanemBTC","id":"78","hash_share":47218206070999,"count":"1"}],
+        poolHistoryData: {
+            poolPercentHistory: {"BTC.com":["0.0440","0.0426","0.0637","0.0767","0.0819","0.1173","0.1158","0.1142","0.1438","0.1710","0.2204","0.2598"],"AntPool":["0.1576","0.1654","0.1630","0.1673","0.2120","0.1825","0.1580","0.1922","0.1742","0.1788","0.1899","0.1536"],"BTC.TOP":["0.0622","0.0840","0.0977","0.1416","0.1257","0.1217","0.1341","0.1283","0.1296","0.1326","0.1314","0.1183"],"ViaBTC":["0.0697","0.0408","0.0536","0.0470","0.0497","0.0558","0.1007","0.1007","0.1360","0.1229","0.1175","0.1183"],"Other":["0.2742","0.2796","0.2758","0.2603","0.2668","0.2229","0.1905","0.1622","0.1160","0.0961","0.1011","0.1106"],"SlushPool":["0.0648","0.0570","0.0501","0.0485","0.0426","0.0542","0.0560","0.0679","0.0928","0.1076","0.1052","0.1041"],"F2Pool":["0.1190","0.1066","0.0950","0.0962","0.0784","0.0790","0.0873","0.0907","0.0809","0.0783","0.0548","0.0490"],"BTCC":["0.0708","0.0904","0.0833","0.0749","0.0755","0.0726","0.0737","0.0702","0.0444","0.0296","0.0241","0.0380"],"BitClub":["0.0300","0.0324","0.0352","0.0349","0.0334","0.0427","0.0404","0.0340","0.0281","0.0300","0.0239","0.0181"],"BitFury":["0.1077","0.1012","0.0826","0.0526","0.0340","0.0513","0.0435","0.0396","0.0343","0.0274","0.0202","0.0169"],"58COIN":[0,0,0,0,0,0,0,0,"0.0199","0.0257","0.0115","0.0133"]},
+            start: "20170301",
+            end: "20180201"
+        },
+        bipData: []
+    };
+</script>
+
+    <!-- 百度统计 -->
+    </head>
+<body>
+
+<!--[if lte IE 8]>
+<style>.browserupgrade{background:#ccc;color:#000;padding:.2em;text-align:center;font-size:16px;line-height:1.6}.browserupgrade p{margin:10px 0}</style>
+<div class="browserupgrade">
+    <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p>您正在使用的浏览器版本过低。请<a href="http://browsehappy.com/">更新浏览器</a>，以获取最佳体验。</p>
+</div>
+<![endif]-->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo">
+                <div class="logo-inner">
+                    <a href="https://btc.com" class="text-hide logo-link">Pool Stats</a>
+                                    </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="https://pool.btc.com/" target="_blank">Pool</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://wallet.btc.com/" target="_blank">Wallet</a>
+                    </li>
+                                                                <li class="nav-item">
+                            <a href="https://btc.com/block">Blocks</a>
+                            
+                                                    </li>
+                                            <li class="nav-item">
+                            <a href="https://btc.com/stats">Stats</a>
+                            
+                                                    </li>
+                                            <li class="nav-item">
+                            <a href="https://btc.com/tools">Tools</a>
+                            
+                                                    </li>
+                                            <li class="nav-item">
+                            <a href="https://btc.com/applications">Applications</a>
+                            
+                                                    </li>
+                                                                <li class="nav-item">
+                            <a style="font-weight: bold;" href="https://bch.btc.com/stats/pool">
+                                                                    Bitcoin<span style="margin-left: 2px">Cash (BCH)
+                                                            </a>
+                        </li>
+                                    </ul>
+            </nav>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            <div class="searchbar">
+                <div class="searchbar-inner">
+                    <form action="https://btc.com/search" method="GET" class="searchbar-form clearfix"
+                          onsubmit="this.q.value = this.q.value.trim()">
+                        <button class="searchbar-submit" type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <div class="searchbar-input-container">
+                            <input type="search" class="searchbar-input" name="q"
+                                   placeholder="Address/Height/Hash..."
+                                   autocomplete="off"
+                                   onfocus="$(this).addClass('active')"
+                                   onblur="this.value.length > 1 || $(this).removeClass('active')"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="main-body">
+        <div class="container">
+
+            <div class="row">
+                <ol class="breadcrumb bm">
+                    <li><a href="https://btc.com">Home</a></li>
+                    <li><a href="https://btc.com/stats">Stats</a></li>
+                    <li>Pool Distribution</li>
+                </ol>
+            </div>
+
+            <div class="row">
+                <div class="panel panel-bm">
+                    <div class="panel-heading">
+                        <div class="panel-heading-title">
+                            Pool Distribution
+                            <span class="geryColor smallSize">(calulate by blocks)</span>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="pool-panel pool-panel-share">
+
+                        <div class="pool-panel-interval">
+                            <ul class="clearfix">
+                                <li class="active"><a href="https://btc.com/stats/pool?pool_mode=all">All</a></li>
+                                <li ><a href="https://btc.com/stats/pool?pool_mode=year">1 Y</a></li>
+                                <li ><a href="https://btc.com/stats/pool?pool_mode=month3">3 M</a></li>
+                                <li ><a href="https://btc.com/stats/pool?pool_mode=month">1 M</a></li>
+                                <li ><a href="https://btc.com/stats/pool?pool_mode=week">1 W</a></li>
+                                <li ><a href="https://btc.com/stats/pool?pool_mode=day3">3 D</a></li>
+                                <li ><a href="https://btc.com/stats/pool?pool_mode=day">24 H</a></li>
+                            </ul>
+                        </div>
+
+                            <div>
+                                <div class="pool-panel-percentage-pie-chart-inner" style="min-width: 250px; height: 400px; margin: 0 auto;"></div>
+
+                                </div>
+
+                        <table class="table table-hover pool-panel-share-table">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="pool-table-width" style="text-align: left;">Pool</th>
+                                <th class="pool-table-width">Hashrate Share</th>
+                                                                <th class="pool-table-width">Blocks Mined</th>
+                                <th class="pool-table-width">Empty Blocks Count</th>
+                                <th class="pool-table-width">Empty Blocks Percentage</th>
+                                <th class="pool-table-width">Avg. Block Size  <br > (Bytes)</th>
+
+                                <th class="pool-table-width">Avg. Tx Fees Per Block  <br> (BTC)</th>
+                                <th class="pool-table-width">Tx Fees % of Block Reward</th>
+                            </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">0</td>
+                                    <td style="text-align: left;">
+                                                                                    NETWORK
+                                                                            </td>
+                                    <td>100.00 %</td>
+                                                                        <td>512,082</td>
+                                    <td>100,908 </td>
+                                    <td>19.71 %</td>
+                                    <td>313,484</td>
+
+                                    <td>0.34889468</td>
+                                    <td>1.06 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">1</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/F2Pool">F2Pool</a>
+                                                                            </td>
+                                    <td>7.78 %</td>
+                                                                        <td>39,842</td>
+                                    <td>943 </td>
+                                    <td>2.37 %</td>
+                                    <td>574,111</td>
+
+                                    <td>0.44202372</td>
+                                    <td>2.04 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">2</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/AntPool">AntPool</a>
+                                                                            </td>
+                                    <td>6.66 %</td>
+                                                                        <td>34,106</td>
+                                    <td>1,512 </td>
+                                    <td>4.43 %</td>
+                                    <td>717,498</td>
+
+                                    <td>0.76423776</td>
+                                    <td>4.00 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">3</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTC%20Guild">BTC Guild</a>
+                                                                            </td>
+                                    <td>6.43 %</td>
+                                                                        <td>32,935</td>
+                                    <td>12 </td>
+                                    <td>0.04 %</td>
+                                    <td>170,721</td>
+
+                                    <td>0.19900559</td>
+                                    <td>0.65 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">4</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/GHash.IO">GHash.IO</a>
+                                                                            </td>
+                                    <td>4.51 %</td>
+                                                                        <td>23,083</td>
+                                    <td>1 </td>
+                                    <td>0.00 %</td>
+                                    <td>234,968</td>
+
+                                    <td>0.10735954</td>
+                                    <td>0.43 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">5</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/SlushPool">SlushPool</a>
+                                                                            </td>
+                                    <td>4.45 %</td>
+                                                                        <td>22,795</td>
+                                    <td>164 </td>
+                                    <td>0.72 %</td>
+                                    <td>424,390</td>
+
+                                    <td>0.58056312</td>
+                                    <td>2.17 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">6</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTCC">BTCC</a>
+                                                                            </td>
+                                    <td>3.39 %</td>
+                                                                        <td>17,376</td>
+                                    <td>422 </td>
+                                    <td>2.43 %</td>
+                                    <td>644,272</td>
+
+                                    <td>0.60477015</td>
+                                    <td>3.05 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">7</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BitFury">BitFury</a>
+                                                                            </td>
+                                    <td>3.20 %</td>
+                                                                        <td>16,394</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>728,129</td>
+
+                                    <td>0.57068197</td>
+                                    <td>2.79 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">8</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BW.COM">BW.COM</a>
+                                                                            </td>
+                                    <td>2.38 %</td>
+                                                                        <td>12,180</td>
+                                    <td>319 </td>
+                                    <td>2.62 %</td>
+                                    <td>681,323</td>
+
+                                    <td>0.55583712</td>
+                                    <td>2.87 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">9</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Eligius">Eligius</a>
+                                                                            </td>
+                                    <td>2.22 %</td>
+                                                                        <td>11,387</td>
+                                    <td>349 </td>
+                                    <td>3.06 %</td>
+                                    <td>219,137</td>
+
+                                    <td>0.12032936</td>
+                                    <td>0.41 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">10</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTC.com">BTC.com</a>
+                                                                            </td>
+                                    <td>1.57 %</td>
+                                                                        <td>8,052</td>
+                                    <td>113 </td>
+                                    <td>1.40 %</td>
+                                    <td>1,000,111</td>
+
+                                    <td>1.83684815</td>
+                                    <td>14.69 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">11</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/ViaBTC">ViaBTC</a>
+                                                                            </td>
+                                    <td>1.45 %</td>
+                                                                        <td>7,446</td>
+                                    <td>29 </td>
+                                    <td>0.39 %</td>
+                                    <td>950,780</td>
+
+                                    <td>1.46134162</td>
+                                    <td>11.62 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">12</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTC.TOP">BTC.TOP</a>
+                                                                            </td>
+                                    <td>1.39 %</td>
+                                                                        <td>7,107</td>
+                                    <td>50 </td>
+                                    <td>0.70 %</td>
+                                    <td>991,372</td>
+
+                                    <td>1.98233774</td>
+                                    <td>15.86 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">13</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BitMinter">BitMinter</a>
+                                                                            </td>
+                                    <td>1.26 %</td>
+                                                                        <td>6,446</td>
+                                    <td>138 </td>
+                                    <td>2.14 %</td>
+                                    <td>174,612</td>
+
+                                    <td>0.19176880</td>
+                                    <td>0.61 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">14</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/50BTC">50BTC</a>
+                                                                            </td>
+                                    <td>1.25 %</td>
+                                                                        <td>6,392</td>
+                                    <td>1 </td>
+                                    <td>0.02 %</td>
+                                    <td>144,388</td>
+
+                                    <td>0.26881565</td>
+                                    <td>1.08 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">15</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/KnCMiner">KnCMiner</a>
+                                                                            </td>
+                                    <td>1.23 %</td>
+                                                                        <td>6,290</td>
+                                    <td>220 </td>
+                                    <td>3.50 %</td>
+                                    <td>485,973</td>
+
+                                    <td>0.16648023</td>
+                                    <td>0.68 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">16</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/OzCoin">OzCoin</a>
+                                                                            </td>
+                                    <td>0.95 %</td>
+                                                                        <td>4,845</td>
+                                    <td>2 </td>
+                                    <td>0.04 %</td>
+                                    <td>124,843</td>
+
+                                    <td>0.23176963</td>
+                                    <td>0.60 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">17</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Bixin">Bixin</a>
+                                                                            </td>
+                                    <td>0.85 %</td>
+                                                                        <td>4,375</td>
+                                    <td>57 </td>
+                                    <td>1.30 %</td>
+                                    <td>971,196</td>
+
+                                    <td>1.32064166</td>
+                                    <td>10.21 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">18</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BitClub">BitClub</a>
+                                                                            </td>
+                                    <td>0.78 %</td>
+                                                                        <td>3,991</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>955,597</td>
+
+                                    <td>1.24496476</td>
+                                    <td>7.96 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">19</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/EclipseMC">EclipseMC</a>
+                                                                            </td>
+                                    <td>0.70 %</td>
+                                                                        <td>3,595</td>
+                                    <td>46 </td>
+                                    <td>1.28 %</td>
+                                    <td>169,099</td>
+
+                                    <td>0.17915174</td>
+                                    <td>0.70 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">20</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/ASICMiner">ASICMiner</a>
+                                                                            </td>
+                                    <td>0.61 %</td>
+                                                                        <td>3,127</td>
+                                    <td>5 </td>
+                                    <td>0.16 %</td>
+                                    <td>88,841</td>
+
+                                    <td>0.20080492</td>
+                                    <td>0.80 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">21</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/KanoPool">KanoPool</a>
+                                                                            </td>
+                                    <td>0.43 %</td>
+                                                                        <td>2,210</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>874,215</td>
+
+                                    <td>0.68632012</td>
+                                    <td>3.61 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">22</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/GBMiners">GBMiners</a>
+                                                                            </td>
+                                    <td>0.40 %</td>
+                                                                        <td>2,024</td>
+                                    <td>1 </td>
+                                    <td>0.05 %</td>
+                                    <td>940,571</td>
+
+                                    <td>1.38610069</td>
+                                    <td>11.09 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">23</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/1Hash">1Hash</a>
+                                                                            </td>
+                                    <td>0.37 %</td>
+                                                                        <td>1,895</td>
+                                    <td>110 </td>
+                                    <td>5.80 %</td>
+                                    <td>920,617</td>
+
+                                    <td>1.21685301</td>
+                                    <td>8.55 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">24</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Telco%20214">Telco 214</a>
+                                                                            </td>
+                                    <td>0.36 %</td>
+                                                                        <td>1,827</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>570,193</td>
+
+                                    <td>0.43580320</td>
+                                    <td>2.03 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">25</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/CloudHashing">CloudHashing</a>
+                                                                            </td>
+                                    <td>0.36 %</td>
+                                                                        <td>1,824</td>
+                                    <td>1 </td>
+                                    <td>0.05 %</td>
+                                    <td>168,199</td>
+
+                                    <td>0.07963856</td>
+                                    <td>0.32 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">26</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/21%20Inc.">21 Inc.</a>
+                                                                            </td>
+                                    <td>0.29 %</td>
+                                                                        <td>1,508</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>684,733</td>
+
+                                    <td>0.19635398</td>
+                                    <td>0.79 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">27</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Bitcoin.com">Bitcoin.com</a>
+                                                                            </td>
+                                    <td>0.27 %</td>
+                                                                        <td>1,365</td>
+                                    <td>5 </td>
+                                    <td>0.37 %</td>
+                                    <td>907,855</td>
+
+                                    <td>1.39933130</td>
+                                    <td>11.19 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">28</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Polmine">Polmine</a>
+                                                                            </td>
+                                    <td>0.25 %</td>
+                                                                        <td>1,290</td>
+                                    <td>5 </td>
+                                    <td>0.39 %</td>
+                                    <td>117,911</td>
+
+                                    <td>0.08912112</td>
+                                    <td>0.36 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">29</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Cointerra">Cointerra</a>
+                                                                            </td>
+                                    <td>0.18 %</td>
+                                                                        <td>908</td>
+                                    <td>7 </td>
+                                    <td>0.77 %</td>
+                                    <td>288,214</td>
+
+                                    <td>0.08169024</td>
+                                    <td>0.33 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">30</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/MegaBigPower">MegaBigPower</a>
+                                                                            </td>
+                                    <td>0.16 %</td>
+                                                                        <td>816</td>
+                                    <td>8 </td>
+                                    <td>0.98 %</td>
+                                    <td>135,328</td>
+
+                                    <td>0.04876578</td>
+                                    <td>0.20 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">31</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/digitalBTC">digitalBTC</a>
+                                                                            </td>
+                                    <td>0.13 %</td>
+                                                                        <td>676</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>338,256</td>
+
+                                    <td>0.08723250</td>
+                                    <td>0.35 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">32</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/HHTT">HHTT</a>
+                                                                            </td>
+                                    <td>0.12 %</td>
+                                                                        <td>623</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>172,700</td>
+
+                                    <td>0.31250561</td>
+                                    <td>1.21 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">33</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Bitparking">Bitparking</a>
+                                                                            </td>
+                                    <td>0.11 %</td>
+                                                                        <td>583</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>122,735</td>
+
+                                    <td>0.26318209</td>
+                                    <td>1.05 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">34</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/MaxBTC">MaxBTC</a>
+                                                                            </td>
+                                    <td>0.09 %</td>
+                                                                        <td>449</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>121,486</td>
+
+                                    <td>0.25104958</td>
+                                    <td>0.57 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">35</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BATPOOL">BATPOOL</a>
+                                                                            </td>
+                                    <td>0.09 %</td>
+                                                                        <td>441</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>976,217</td>
+
+                                    <td>1.70966185</td>
+                                    <td>13.68 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">36</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTPOOL">BTPOOL</a>
+                                                                            </td>
+                                    <td>0.08 %</td>
+                                                                        <td>416</td>
+                                    <td>8 </td>
+                                    <td>1.92 %</td>
+                                    <td>982,648</td>
+
+                                    <td>1.87798936</td>
+                                    <td>15.02 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">37</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/CoinLab">CoinLab</a>
+                                                                            </td>
+                                    <td>0.07 %</td>
+                                                                        <td>346</td>
+                                    <td>1 </td>
+                                    <td>0.29 %</td>
+                                    <td>61,020</td>
+
+                                    <td>0.09518148</td>
+                                    <td>0.23 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">38</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/58COIN">58COIN</a>
+                                                                            </td>
+                                    <td>0.07 %</td>
+                                                                        <td>341</td>
+                                    <td>9 </td>
+                                    <td>2.64 %</td>
+                                    <td>976,483</td>
+
+                                    <td>2.74292698</td>
+                                    <td>21.94 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">39</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/GoGreenLight">GoGreenLight</a>
+                                                                            </td>
+                                    <td>0.07 %</td>
+                                                                        <td>333</td>
+                                    <td>13 </td>
+                                    <td>3.90 %</td>
+                                    <td>784,398</td>
+
+                                    <td>0.93140311</td>
+                                    <td>7.45 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">40</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/TripleMining">TripleMining</a>
+                                                                            </td>
+                                    <td>0.07 %</td>
+                                                                        <td>333</td>
+                                    <td>2 </td>
+                                    <td>0.60 %</td>
+                                    <td>113,609</td>
+
+                                    <td>0.17423867</td>
+                                    <td>0.45 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">41</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTC%20Nuggets">BTC Nuggets</a>
+                                                                            </td>
+                                    <td>0.06 %</td>
+                                                                        <td>293</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>365,874</td>
+
+                                    <td>0.09483165</td>
+                                    <td>0.38 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">42</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Solo%20CK">Solo CK</a>
+                                                                            </td>
+                                    <td>0.05 %</td>
+                                                                        <td>232</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>748,088</td>
+
+                                    <td>0.39691966</td>
+                                    <td>1.82 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">43</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Yourbtc.net">Yourbtc.net</a>
+                                                                            </td>
+                                    <td>0.04 %</td>
+                                                                        <td>226</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>23,532</td>
+
+                                    <td>0.81353261</td>
+                                    <td>1.63 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">44</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/CanoePool">CanoePool</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>123</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>677,943</td>
+
+                                    <td>1.03315550</td>
+                                    <td>8.27 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">45</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/EXX&amp;BW">EXX&amp;BW</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>116</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>966,248</td>
+
+                                    <td>1.17382174</td>
+                                    <td>9.39 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">46</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Waterhole">Waterhole</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>113</td>
+                                    <td>1 </td>
+                                    <td>0.88 %</td>
+                                    <td>822,683</td>
+
+                                    <td>1.70756847</td>
+                                    <td>13.66 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">47</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/shawnp0wers">shawnp0wers</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>112</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>966,489</td>
+
+                                    <td>1.60570036</td>
+                                    <td>12.85 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">48</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/ConnectBTC">ConnectBTC</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>111</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>945,140</td>
+
+                                    <td>1.85164320</td>
+                                    <td>14.81 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">49</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BitcoinIndia">BitcoinIndia</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>109</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>988,893</td>
+
+                                    <td>1.69446424</td>
+                                    <td>13.56 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">50</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/NMCbit">NMCbit</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>105</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>51,957</td>
+
+                                    <td>0.07715921</td>
+                                    <td>0.15 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">51</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Mt%20Red">Mt Red</a>
+                                                                            </td>
+                                    <td>0.02 %</td>
+                                                                        <td>77</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>174,349</td>
+
+                                    <td>0.35081238</td>
+                                    <td>1.40 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">52</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BitcoinRussia">BitcoinRussia</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>53</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>877,989</td>
+
+                                    <td>2.00016609</td>
+                                    <td>16.00 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">53</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/ST%20Mining%20Corp">ST Mining Corp</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>48</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>124,706</td>
+
+                                    <td>0.20797058</td>
+                                    <td>0.83 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">54</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/simplecoin.us">simplecoin.us</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>43</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>28,525</td>
+
+                                    <td>0.03994713</td>
+                                    <td>0.08 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">55</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/MiningKings">MiningKings</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>41</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>735,593</td>
+
+                                    <td>1.48943272</td>
+                                    <td>11.92 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">56</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/mmpool">mmpool</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>40</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>340,136</td>
+
+                                    <td>0.34073261</td>
+                                    <td>1.49 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">57</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Eobot">Eobot</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>36</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>903,690</td>
+
+                                    <td>1.49123845</td>
+                                    <td>9.99 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">58</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/PHash.IO">PHash.IO</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>35</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>932,991</td>
+
+                                    <td>1.13960891</td>
+                                    <td>9.12 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">59</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/HAOZHUZHU">HAOZHUZHU</a>
+                                                                            </td>
+                                    <td>0.01 %</td>
+                                                                        <td>26</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>774,396</td>
+
+                                    <td>1.19826992</td>
+                                    <td>9.59 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">60</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/175btc">175btc</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>22</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>134,105</td>
+
+                                    <td>0.20593083</td>
+                                    <td>0.82 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">61</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Bitsolo">Bitsolo</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>22</td>
+                                    <td>1 </td>
+                                    <td>4.55 %</td>
+                                    <td>200,496</td>
+
+                                    <td>0.08053494</td>
+                                    <td>0.32 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">62</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/NiceHash">NiceHash</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>20</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>663,553</td>
+
+                                    <td>0.38029982</td>
+                                    <td>1.96 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">63</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BCMonster">BCMonster</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>16</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>708,434</td>
+
+                                    <td>0.63649494</td>
+                                    <td>3.54 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">64</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTCServ">BTCServ</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>9</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>30,370</td>
+
+                                    <td>0.00000000</td>
+                                    <td>0.00 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">65</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/bcpool.io">bcpool.io</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>8</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>557,263</td>
+
+                                    <td>0.06529632</td>
+                                    <td>0.26 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">66</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/CKPool">CKPool</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>6</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>1,099,488</td>
+
+                                    <td>2.04961187</td>
+                                    <td>16.40 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">67</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/UNOMP">UNOMP</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>6</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>747,393</td>
+
+                                    <td>0.23724831</td>
+                                    <td>0.95 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">68</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/Huobi">Huobi</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>5</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>331,796</td>
+
+                                    <td>0.10397752</td>
+                                    <td>0.42 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">69</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/DCExploration">DCExploration</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>3</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>1,032,003</td>
+
+                                    <td>3.01564061</td>
+                                    <td>24.13 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">70</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/7pool">7pool</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>1</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>998,193</td>
+
+                                    <td>1.96976098</td>
+                                    <td>15.76 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">71</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/BTC%20Pool%20Party">BTC Pool Party</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>1</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>712,825</td>
+
+                                    <td>0.17917693</td>
+                                    <td>0.72 %</td>
+                                </tr>
+                                                            <tr>
+                                    <td style="color: #aaa;">72</td>
+                                    <td style="text-align: left;">
+                                                                                    <a href="https://btc.com/stats/pool/EkanemBTC">EkanemBTC</a>
+                                                                            </td>
+                                    <td>0.00 %</td>
+                                                                        <td>1</td>
+                                    <td>0 </td>
+                                    <td>0.00 %</td>
+                                    <td>749,149</td>
+
+                                    <td>1.10531149</td>
+                                    <td>8.84 %</td>
+                                </tr>
+                                                    </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-left:0px;margin-right:0px;" id="pool-history">
+                <div class="panel panel-bm">
+                    <div class="panel-heading">
+                        <div class="panel-heading-title">Historical Distribution</div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="pool-panel pool-panel-percentage">
+                            <div class="pool-panel-percentage-chart">
+
+                                <div class="pool-panel-interval">
+                                    <ul class="clearfix">
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2009#pool-history">2009</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2010#pool-history">2010</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2011#pool-history">2011</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2012#pool-history">2012</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2013#pool-history">2013</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2014#pool-history">2014</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2015#pool-history">2015</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2016#pool-history">2016</a></li>
+                                                                                <li ><a href="https://btc.com/stats/pool?percent_mode=2017#pool-history">2017</a></li>
+                                                                                <li class="active"><a href="https://btc.com/stats/pool?percent_mode=latest#pool-history">Past Year</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="pool-panel-percentage-chart-inner"></div>
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3" style="padding-left: 0;">
+                <div class="copyright">
+                    <div class="copyright-logo"></div>
+                    <div class="copyright-text">&copy; Copyright BTC.COM 2018. All Rights Reserved.</div>
+                                    </div>
+            </div>
+            <div class="col-xs-9 links" style="padding-right: 0;">
+                <div class="links-column">
+                    <div class="links-category">Products</div>
+                    <ul class="links-list">
+                        <li class="links-list-item"><a target="_blank" href="https://www.bitmain.com">Antminer</a></li>
+                        <li class="links-list-item"><a target="_blank" href="https://pool.btc.com/">BTC.com Pool</a></li>
+                        <li class="links-list-item"><a target="_blank" href="https://www.hashnest.com">Hashnest</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <div class="links-category">Company</div>
+                    <ul class="links-list">
+                        <li class="links-list-item"><a target="_blank" href="https://www.bitmain.com/about">About us</a></li>
+                        <li class="links-list-item"><a target="_blank" href="https://www.bitmain.com/join_us">Join us</a></li>
+                        <li class="links-list-item"><a target="_blank" href="http://support.bitmain.com/hc/en-us/requests/new">Contact us</a></li>
+                                                    <li class="links-list-item"><a target="_blank" href="https://blog.btc.com/">Blog</a></li>
+                                            </ul>
+                </div>
+                <div class="links-column">
+                    <div class="links-category">Media</div>
+                    <ul class="links-list">
+                        <li class="links-list-item"><a target="_blank" href="http://weibo.com/u/5995599784">Official Weibo</a></li>
+                        <li class="links-list-item"><a target="_blank" href="https://blog.btc.com/">Community</a></li>
+                        <li class="links-list-item"><a target="_blank" href="https://twitter.com/btccom_official">Twitter</a></li>
+                        <li class="links-list-item"><a target="_blank" href="https://www.facebook.com/btccom/">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <div class="links-category">Developers</div>
+                    <ul class="links-list">
+                        <li class="links-list-item"><a href="https://btc.com/api-doc">API</a></li>
+                    </ul>
+                    <ul class="links-list">
+                        <li class="links-list-item">
+                            <a target="_blank" href="https://bmfeedback.bitmain.com/feedback/app_feedback/?app=BTC.COM&amp;imei=1236456456&amp;lan=en">
+                                Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="lang">
+                    <div class="lang-active dropup" style="left: 11px;">
+                        <a id="dropdownMenu" class="dropdown-toggle" href="javascript:" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            English
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu lang-dropdown">
+                                                                                                <li class="lang-option disabled">
+                                        <a href="javascript:">English</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('zh-cn')">简体中文</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('ru')">русский</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('ja')">日本語</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('de')">Deutsch</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('fr')">Français</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('tr')">Türkçe</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('es')">Español</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('pt')">Português</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('bg')">български</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('cs')">Česky</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('ko')">한국어</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('da')">dansk</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('el')">Ελληνικά</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('hi')">हिंदी</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('fi')">Suomi</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('hu')">Magyar</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('it')">Italiano</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('ms')">Malay</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('nl')">Nederlands</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('no')">Norsk</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('pl')">Polski</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('ro')">Română</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('sk')">Slovensky</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('sv')">Svenska</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('th')">ไทย</a>
+                                    </li>
+                                                                                                                                <li class="lang-option">
+                                        <a href="javascript:"
+                                           onclick="setLanguageCookie('vi')">Việt Nam</a>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+                <div class="platform-swtich">
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <a href="javascript:" onclick="setPlatformCookie()">Mobile Site</a>
+                </div>
+                <img src="https://s.btc.com/explorer/assets/images/app/pc/qr-code@2x_f9a2627.png" style="position: absolute; right: -10px; top: 75px; height:128px">
+                </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://s.btc.com/explorer/assets/vendor_096e7cc.js"></script><script src="https://s.btc.com/explorer/assets/lib/daterangepicker_928a599.js"></script><script src="https://s.btc.com/explorer/assets/lib/jquery.scrollUp_dbe8e98.js"></script><script src="https://s.btc.com/explorer/assets/lib/js.cookie_45ca27f.js"></script>
+<script>function setLanguageCookie(e){Cookies.set("lang",e,{expires:30,path:"/"}),location.reload()}</script><script>
+                    function getParameterByName(name, url) {
+                        if (!url) {
+                            url = window.location.href;
+                        }
+                        name = name.replace(/[\[\]]/g, "\\$&");
+                        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                            results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, " "));
+                    }
+
+                    var nr = getParameterByName('nr');
+                    if (nr !== null) {
+                        Cookies.set('platform', 'pc', { expires: 30, path: '/'});
+                    }
+
+                    function  setPlatformCookie() {
+                        Cookies.set('platform', 'mobile', { expires: 30, path: '/', domain : 'btc.com' });
+                        location.reload();
+                    }
+                </script><script>
+        $(function () {
+            $.scrollUp({
+                scrollDistance: 1000,
+                scrollText: '↑ Back To Top'
+            });
+
+            $('input, textarea').placeholder({customClass:'my-placeholder'});
+        });
+    </script><script src="https://s.btc.com/common/js/selfxss/0.0.1/selfxss.min.js"></script>
+
+<!-- 时间本地化 -->
+<script>function timeLocalization(){$(".-btc-time-localization").each(function(){{var t=$(this).attr("data-btccom-timestamp"),a="N/A",o="";$(this).attr("data-btccom-time_format")?$(this).attr("data-btccom-time_format"):"YYYY-MM-DD HH:mm:ss"}-1!=t&&(a=moment.unix(t).local().format("YYYY-MM-DD HH:mm:ss"),o=moment.unix(t).utc().format("UTC: YYYY-MM-DD HH:mm:ss")),$(this).html(a),o&&($(this).attr("data-toggle","tooltip"),$(this).attr("title",o))})}$(document).ready(function(){timeLocalization(),$("[data-toggle='tooltip']").tooltip()});</script><script>
+                                    $(function() {
+                                        var pieOpts = {
+                                            credits: {
+                                                enabled: false
+                                            },
+                                            chart: {
+                                                plotBackgroundColor: null,
+                                                plotBorderWidth: null,
+                                                plotShadow: false,
+                                                type: 'pie',
+                                            },
+                                            title: {
+                                                text: ''
+                                            },
+                                            tooltip: {
+                                                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    allowPointSelect: true,
+                                                    cursor: 'pointer',
+                                                    depth: 35,
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                                        style: {
+                                                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            series: null
+                                        }
+
+                                        var dataSource = [];
+                                        for (let pool of globals.pools) {
+                                            dataSource.push({
+                                                name: pool.name,
+                                                y: pool.p
+                                            });
+                                        }
+                                        var series = [{
+                                            name: "percent",
+                                            colorByPoint: true,
+                                            data: dataSource
+                                        }];
+
+                                        $('.pool-panel-percentage-pie-chart-inner').highcharts($.extend({}, pieOpts, { series: series }));
+                                    })
+                                </script><script>$(function(){function t(t){return moment.utc(globals.poolHistoryData.start,"YYYYMMDD").add(t,"months").format("YYYY/MM")}var e={chart:{type:"area",height:500},credits:{enabled:!1},title:{text:null},xAxis:{type:"category",labels:{formatter:function(){return t(this.value)}}},yAxis:{title:{text:"Percent"},labels:{formatter:function(){return this.value+"%"}}},tooltip:{useHTML:!0,formatter:function(){for(var e='<table><caption style="text-align: right">'+t(this.x)+"</caption>",r=0,a=this.points.length;a>r;r++)e+='<tr><td style="text-align: right; padding-right: 3px; font-weight: 700;">'+this.points[r].series.name+'</td><td style="text-align: right; padding-left: 3px;color: black">',e+=this.points[r].y.toFixed(2)+"%</td></tr>";return e+="</table>"},crosshairs:[{width:1,color:"black"}],shared:!0},plotOptions:{area:{stacking:"percent",lineColor:"#ffffff",lineWidth:1,marker:{enabled:!1,states:{hover:{enabled:!1}}}}},legend:{align:"right",verticalAlign:"top",layout:"vertical",itemMarginTop:20},series:null},r=[];Object.keys(globals.poolHistoryData.poolPercentHistory).forEach(function(t){r.push({name:t,data:globals.poolHistoryData.poolPercentHistory[t].map(function(t){return 100*t})})}),$(".pool-panel-percentage-chart-inner").highcharts($.extend({},e,{series:r}))});</script><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//s.btc.com/common/js/google-analytics/20170908/analytics.js','ga');
+
+                ga('create', 'UA-66176065-6', 'auto');
+                ga('send', 'pageview');
+
+        
+        ga('create', 'UA-66176065-27', 'auto', {name: 'globalGA', cookieName: '_globalGA', allowLinker: true});
+        ga('require', 'linker');
+        ga('require', 'displayfeatures');
+        ga('linker:autoLink', ['btc.com']);
+        ga('globalGA.send', 'pageview');
+
+        $("[ga-type]").each(function(){
+            $(this).click(function () {
+                ga('send', 'event', {
+                    eventCategory: $(this).attr("ga-type"),
+                    eventAction: $(this).attr("ga-target") ? $(this).attr("ga-target") : fromTarget,
+                    eventLabel: $(this).attr("href"),
+                    transport: 'beacon'
+                });
+            })
+        })
+
+    </script>
+</body>
+</html>
