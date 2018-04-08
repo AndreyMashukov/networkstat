@@ -259,7 +259,7 @@ class Networkstat
     private function _getTimeInSeconds(string $timestring): float
     {
         if (preg_match("/((?P<minutes>[0-9]+)m\s)?(?P<seconds>[0-9.]+)s/ui", $timestring, $result) > 0) {
-            $time = ((isset($result["minutes"]) === true) ? ($result["minutes"] * 60) : 0) + $result["seconds"];
+            $time = ((isset($result["minutes"]) === true) ? ((float) $result["minutes"] * 60) : 0) + (float) $result["seconds"];
         } else {
             $time = 0;
         }
@@ -279,7 +279,7 @@ class Networkstat
     private function _calcReward(string $rewardstring): float
     {
         if (preg_match("/(?<coinbase>[0-9,.]+)\+(-)?(?P<comission>[0-9.,]+).*/ui", $rewardstring, $result) > 0) {
-            $reward = ($result["coinbase"] + $result["comission"]);
+            $reward = ((float) $result["coinbase"] + (float) $result["comission"]);
         } else {
             $reward = 0;
         } //end if
